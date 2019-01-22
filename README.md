@@ -12,10 +12,10 @@ See [src](/src).
 
 ## Release Binaries
 
-[release/top.bit](/release/top.bit) is for normal use on Basys 3 Artix-7 FPGA.
-[release/top.bin](/release/top.bin) is for using SPI Flash memory to enable plug and play.
+- [release/top.bit](/release/top.bit) is for normal use on Basys 3 Artix-7 FPGA.
+- [release/top.bin](/release/top.bin) is for using SPI Flash memory to enable plug and play.
 
 ## Contributors
 
-[j3soon](https://github.com/j3soon)
-[tigerpaws01](https://github.com/tigerpaws01)
+- [j3soon](https://github.com/j3soon)
+- [tigerpaws01](https://github.com/tigerpaws01)
