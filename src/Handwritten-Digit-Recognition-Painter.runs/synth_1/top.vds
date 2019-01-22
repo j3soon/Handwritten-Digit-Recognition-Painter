@@ -1,0 +1,1116 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 11 12:38:05 2019
+# Process ID: 11892
+# Current directory: D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/top.vds
+# Journal file: D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 393.805 ; gain = 103.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_divisor' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divisor' (1#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v:22]
+	Parameter n bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (2#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider__parameterized0' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v:22]
+	Parameter n bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider__parameterized0' (2#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v:22]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_display' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/seven-segment-display.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_display' (3#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/seven-segment-display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'canvas_mem_addr_gen' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/canvas_mem_addr_gen.v:8]
+	Parameter LEFT_BOUND bound to: 0 - type: integer 
+	Parameter RIGHT_BOUND bound to: 448 - type: integer 
+	Parameter UPPER_BOUND bound to: 16 - type: integer 
+	Parameter LOWER_BOUND bound to: 464 - type: integer 
+	Parameter SIZE bound to: 56 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'canvas_mem_addr_gen' (4#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/canvas_mem_addr_gen.v:8]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (5#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'vga_controller' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/vga.v:9]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 16 - type: integer 
+	Parameter HS bound to: 96 - type: integer 
+	Parameter HB bound to: 48 - type: integer 
+	Parameter HT bound to: 800 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VS bound to: 2 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VT bound to: 525 - type: integer 
+	Parameter hsync_default bound to: 1'b1 
+	Parameter vsync_default bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (6#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/vga.v:9]
+INFO: [Synth 8-6157] synthesizing module 'CanvasPainter' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:1]
+	Parameter CANVAS_SIZE bound to: 3136 - type: integer 
+	Parameter IDLE bound to: 2'b10 
+	Parameter PAINT bound to: 2'b01 
+	Parameter CLEAR bound to: 2'b00 
+	Parameter ERASE bound to: 2'b11 
+	Parameter BRUSH_SIZE bound to: 4'b1100 
+	Parameter HORIZAONTAL bound to: 1'b0 
+	Parameter VERTICAL bound to: 1'b1 
+	Parameter NO bound to: 1'b0 
+	Parameter YES bound to: 1'b1 
+	Parameter BigBrushOffsetX bound to: 39'b010001011010001000011010001000010001001 
+	Parameter BigBrushOffsetY bound to: 39'b011011010010010010001001001001000000000 
+INFO: [Synth 8-226] default block is never used [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'CanvasPainter' (7#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mouse' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Mouse.v:1]
+INFO: [Synth 8-638] synthesizing module 'MouseCtl' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:208]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 200000000 - type: integer 
+	Parameter CHECK_PERIOD_MS bound to: 100 - type: integer 
+	Parameter TIMEOUT_PERIOD_MS bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'Ps2Interface' declared at 'D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Ps2Interface.vhd:152' bound to instance 'Inst_Ps2Interface' of component 'Ps2Interface' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'Ps2Interface' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Ps2Interface.vhd:180]
+INFO: [Synth 8-256] done synthesizing module 'Ps2Interface' (8#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Ps2Interface.vhd:180]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:451]
+WARNING: [Synth 8-6014] Unused sequential element x_inter_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:457]
+WARNING: [Synth 8-6014] Unused sequential element inc_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:515]
+WARNING: [Synth 8-6014] Unused sequential element y_inter_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:521]
+INFO: [Synth 8-256] done synthesizing module 'MouseCtl' (9#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:208]
+WARNING: [Synth 8-689] width (10) of port connection 'xpos' does not match port width (12) of module 'MouseCtl' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Mouse.v:24]
+WARNING: [Synth 8-689] width (10) of port connection 'ypos' does not match port width (12) of module 'MouseCtl' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Mouse.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'mouse' (10#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Mouse.v:1]
+INFO: [Synth 8-6157] synthesizing module 'XplusConverter' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/DigitMultiplier.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'XplusConverter' (11#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/DigitMultiplier.v:1]
+WARNING: [Synth 8-689] width (11) of port connection 'xplus' does not match port width (8) of module 'XplusConverter' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/top.v:138]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_bg_img' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_bg_img_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_bg_img' (12#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_bg_img_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_dirt' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_dirt_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_dirt' (13#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_dirt_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_stone' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_stone_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_stone' (14#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_stone_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_grass' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_grass_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_grass' (15#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_grass_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_digits' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_digits_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_digits' (16#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_digits_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'MouseAddrGen' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/MouseAddrGen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'MouseAddrGen' (17#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/MouseAddrGen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_eraser' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_eraser_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_eraser' (18#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_eraser_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_normalpen' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_normalpen_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_normalpen' (19#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_normalpen_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_normaleraser' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_normaleraser_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_normaleraser' (20#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_normaleraser_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_cursor' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_cursor_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_cursor' (21#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_cursor_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'pixel_gen' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v:25]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_n' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v:8]
+	Parameter n bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_n' (22#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v:8]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider_n__parameterized0' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v:8]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider_n__parameterized0' (22#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_gen' (23#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v:25]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_img' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_img_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_img' (24#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_img_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_const' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_const_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_const' (25#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_const_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_inter' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_inter_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_inter' (26#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/.Xil/Vivado-11892-Melon/realtime/blk_mem_gen_inter_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'neural_net' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:3]
+	Parameter S_IDLE bound to: 2'b00 
+	Parameter S_FIRST bound to: 2'b01 
+	Parameter S_SECOND bound to: 2'b10 
+	Parameter S_COMP bound to: 2'b11 
+	Parameter l1w_idx bound to: 0 - type: integer 
+	Parameter l2w_idx bound to: 50176 - type: integer 
+	Parameter l1b_idx bound to: 50816 - type: integer 
+	Parameter l2b_idx bound to: 50880 - type: integer 
+	Parameter inter_idx bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'neural_net' (27#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top' (28#1) [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/top.v:1]
+WARNING: [Synth 8-3917] design top has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 455.488 ; gain = 165.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 455.488 ; gain = 165.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 455.488 ; gain = 165.109
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_img/blk_mem_gen_img/blk_mem_gen_img_in_context.xdc] for cell 'blk_mem_gen_img_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_img/blk_mem_gen_img/blk_mem_gen_img_in_context.xdc] for cell 'blk_mem_gen_img_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_0_1/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'blk_mem_gen_0_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_const/blk_mem_gen_const/blk_mem_gen_const_in_context.xdc] for cell 'blk_mem_gen_const_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_const/blk_mem_gen_const/blk_mem_gen_const_in_context.xdc] for cell 'blk_mem_gen_const_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter/blk_mem_gen_inter_in_context.xdc] for cell 'blk_mem_gen_inter_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_inter/blk_mem_gen_inter/blk_mem_gen_inter_in_context.xdc] for cell 'blk_mem_gen_inter_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_bg_img/blk_mem_gen_bg_img/blk_mem_gen_bg_img_in_context.xdc] for cell 'blk_mem_gen_bg_img_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_bg_img/blk_mem_gen_bg_img/blk_mem_gen_bg_img_in_context.xdc] for cell 'blk_mem_gen_bg_img_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_dirt/blk_mem_gen_dirt/blk_mem_gen_dirt_in_context.xdc] for cell 'blk_mem_gen_dirt_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_dirt/blk_mem_gen_dirt/blk_mem_gen_dirt_in_context.xdc] for cell 'blk_mem_gen_dirt_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_stone/blk_mem_gen_stone/blk_mem_gen_stone_in_context.xdc] for cell 'blk_mem_gen_stone_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_stone/blk_mem_gen_stone/blk_mem_gen_stone_in_context.xdc] for cell 'blk_mem_gen_stone_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_grass/blk_mem_gen_grass/blk_mem_gen_grass_in_context.xdc] for cell 'blk_mem_gen_grass_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_grass/blk_mem_gen_grass/blk_mem_gen_grass_in_context.xdc] for cell 'blk_mem_gen_grass_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_digits/blk_mem_gen_digits/blk_mem_gen_digits_in_context.xdc] for cell 'blk_mem_gen_digits_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_digits/blk_mem_gen_digits/blk_mem_gen_digits_in_context.xdc] for cell 'blk_mem_gen_digits_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_cursor/blk_mem_gen_cursor/blk_mem_gen_cursor_in_context.xdc] for cell 'blk_mem_gen_cursor_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_cursor/blk_mem_gen_cursor/blk_mem_gen_cursor_in_context.xdc] for cell 'blk_mem_gen_cursor_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_eraser/blk_mem_gen_eraser/blk_mem_gen_eraser_in_context.xdc] for cell 'blk_mem_gen_eraser_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_eraser/blk_mem_gen_eraser/blk_mem_gen_eraser_in_context.xdc] for cell 'blk_mem_gen_eraser_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_normalpen/blk_mem_gen_normalpen/blk_mem_gen_normalpen_in_context.xdc] for cell 'blk_mem_gen_normalpen_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_normalpen/blk_mem_gen_normalpen/blk_mem_gen_normalpen_in_context.xdc] for cell 'blk_mem_gen_normalpen_inst'
+Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_normaleraser/blk_mem_gen_normaleraser/blk_mem_gen_normaleraser_in_context.xdc] for cell 'blk_mem_gen_normaleraser_inst'
+Finished Parsing XDC File [d:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_normaleraser/blk_mem_gen_normaleraser/blk_mem_gen_normaleraser_in_context.xdc] for cell 'blk_mem_gen_normaleraser_inst'
+Parsing XDC File [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 801.441 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_0_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_bg_img_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_cursor_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_digits_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_dirt_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_eraser_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_grass_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_img_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_normaleraser_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_normalpen_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'blk_mem_gen_stone_inst' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 803.004 ; gain = 512.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 803.004 ; gain = 512.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for blk_mem_gen_img_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_0_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_const_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_inter_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_bg_img_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_dirt_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_stone_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_grass_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_digits_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_cursor_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_eraser_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_normalpen_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for blk_mem_gen_normaleraser_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 803.004 ; gain = 512.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'DIGIT_reg' in module 'seven_segment_display'
+INFO: [Synth 8-5544] ROM "DIGIT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "line_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:155]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:154]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:128]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:126]
+INFO: [Synth 8-5544] ROM "enable0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nextState0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nextP" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Ps2Interface'
+INFO: [Synth 8-5546] ROM "reset_bit_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "read_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load_tx_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ps2_clk_h" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_100us_counter_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_20us_counter_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "delay_63clk_counter_enable" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'MouseCtl'
+INFO: [Synth 8-5546] ROM "periodic_check_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "timeout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reset_periodic_check_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "new_event" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "xplus" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "vgaRed0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vgaRed0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_i" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_img" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_img" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_inter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_inter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_inter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_inter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_addr_inter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:201]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:143]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'neural_net'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                00000000000000001 |                            00000
+            rx_down_edge |                00000000000000010 |                            00011
+                rx_clk_l |                00000000000000100 |                            00010
+                rx_clk_h |                00000000000001000 |                            00001
+         rx_error_parity |                00000000000010000 |                            00100
+           rx_data_ready |                00000000000100000 |                            00101
+          tx_force_clk_l |                00000000001000000 |                            00110
+      tx_bring_data_down |                00000000010000000 |                            00111
+          tx_release_clk |                00000000100000000 |                            01000
+ tx_first_wait_down_edge |                00000001000000000 |                            01001
+                tx_clk_l |                00000010000000000 |                            01010
+         tx_wait_up_edge |                00000100000000000 |                            01011
+tx_wait_up_edge_before_ack |                00001000000000000 |                            01101
+             tx_wait_ack |                00010000000000000 |                            01110
+         tx_received_ack |                00100000000000000 |                            01111
+         tx_error_no_ack |                01000000000000000 |                            10000
+                tx_clk_h |                10000000000000000 |                            01100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Ps2Interface'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset | 0000000000000000000000000000000000001 |                           000000
+          reset_wait_ack | 0000000000000000000000000000000000010 |                           000001
+reset_wait_bat_completion | 0000000000000000000000000000000000100 |                           000010
+           reset_wait_id | 0000000000000000000000000000000001000 |                           000011
+reset_set_sample_rate_200 | 0000000000000000000000000000000010000 |                           000100
+reset_set_sample_rate_200_wait_ack | 0000000000000000000000000000000100000 |                           000101
+reset_send_sample_rate_200 | 0000000000000000000000000000001000000 |                           000110
+reset_send_sample_rate_200_wait_ack | 0000000000000000000000000000010000000 |                           000111
+reset_set_sample_rate_100 | 0000000000000000000000000000100000000 |                           001000
+reset_set_sample_rate_100_wait_ack | 0000000000000000000000000001000000000 |                           001001
+reset_send_sample_rate_100 | 0000000000000000000000000010000000000 |                           001010
+reset_send_sample_rate_100_wait_ack | 0000000000000000000000000100000000000 |                           001011
+reset_set_sample_rate_80 | 0000000000000000000000001000000000000 |                           001100
+reset_set_sample_rate_80_wait_ack | 0000000000000000000000010000000000000 |                           001101
+reset_send_sample_rate_80 | 0000000000000000000000100000000000000 |                           001110
+reset_send_sample_rate_80_wait_ack | 0000000000000000000001000000000000000 |                           001111
+           reset_read_id | 0000000000000000000010000000000000000 |                           010000
+  reset_read_id_wait_ack | 0000000000000000000100000000000000000 |                           010001
+   reset_read_id_wait_id | 0000000000000000001000000000000000000 |                           010010
+    reset_set_resolution | 0000000000000000010000000000000000000 |                           010011
+reset_set_resolution_wait_ack | 0000000000000000100000000000000000000 |                           010100
+   reset_send_resolution | 0000000000000001000000000000000000000 |                           010101
+reset_send_resolution_wait_ack | 0000000000000010000000000000000000000 |                           010110
+reset_set_sample_rate_40 | 0000000000000100000000000000000000000 |                           010111
+reset_set_sample_rate_40_wait_ack | 0000000000001000000000000000000000000 |                           011000
+reset_send_sample_rate_40 | 0000000000010000000000000000000000000 |                           011001
+reset_send_sample_rate_40_wait_ack | 0000000000100000000000000000000000000 |                           011010
+  reset_enable_reporting | 0000000001000000000000000000000000000 |                           011011
+reset_enable_reporting_wait_ack | 0000000010000000000000000000000000000 |                           011100
+             read_byte_1 | 0000000100000000000000000000000000000 |                           011101
+             read_byte_2 | 0000001000000000000000000000000000000 |                           011110
+             read_byte_3 | 0000010000000000000000000000000000000 |                           011111
+             read_byte_4 | 0000100000000000000000000000000000000 |                           100000
+          mark_new_event | 0001000000000000000000000000000000000 |                           100100
+           check_read_id | 0010000000000000000000000000000000000 |                           100001
+  check_read_id_wait_ack | 0100000000000000000000000000000000000 |                           100010
+   check_read_id_wait_id | 1000000000000000000000000000000000000 |                           100011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'MouseCtl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                 S_FIRST |                               01 |                               01
+                S_SECOND |                               10 |                               10
+                  S_COMP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'neural_net'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 803.004 ; gain = 512.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 5     
+	   4 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 5     
+	   3 Input     12 Bit       Adders := 3     
+	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 7     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 13    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 8     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 17    
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 17    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 45    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 5     
+	   4 Input     64 Bit        Muxes := 1     
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 69    
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	  17 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 18    
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 3     
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 23    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 16    
+	   3 Input     10 Bit        Muxes := 9     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 2     
+	  37 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 6     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 53    
+	  37 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   4 Input      2 Bit        Muxes := 3     
+	  15 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 27    
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 9     
+	  17 Input      1 Bit        Muxes := 4     
+	  37 Input      1 Bit        Muxes := 20    
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
+Module clock_divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module seven_segment_display 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module canvas_mem_addr_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module CanvasPainter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     30 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 2     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 9     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input     10 Bit        Muxes := 9     
+	   2 Input     10 Bit        Muxes := 9     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	  15 Input      2 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 7     
+Module Ps2Interface 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  17 Input     17 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 18    
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	  17 Input      1 Bit        Muxes := 4     
+Module MouseCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     25 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               22 Bit    Registers := 1     
+	               12 Bit    Registers := 6     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	  37 Input     37 Bit        Muxes := 1     
+	   2 Input     37 Bit        Muxes := 69    
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 2     
+	  37 Input      8 Bit        Muxes := 3     
+	  37 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  37 Input      1 Bit        Muxes := 20    
+Module XplusConverter 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+Module MouseAddrGen 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module pixel_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 9     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 11    
+	   2 Input      4 Bit        Muxes := 51    
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module neural_net 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 5     
+	   4 Input     64 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 4     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 5     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 5     
+	   4 Input     10 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 4     
+	   3 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "vgaRed0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "vgaRed0" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+DSP Report: Generating DSP pixel_addr0, operation Mode is: C+A*(B:0x38).
+DSP Report: operator pixel_addr0 is absorbed into DSP pixel_addr0.
+DSP Report: operator pixel_addr1 is absorbed into DSP pixel_addr0.
+INFO: [Synth 8-5546] ROM "line_cnt" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP nextTurtleX3, operation Mode is: A*B.
+DSP Report: operator nextTurtleX3 is absorbed into DSP nextTurtleX3.
+DSP Report: Generating DSP nextTurtleX1, operation Mode is: C+A*B.
+DSP Report: operator nextTurtleX1 is absorbed into DSP nextTurtleX1.
+DSP Report: operator nextTurtleX2 is absorbed into DSP nextTurtleX1.
+DSP Report: Generating DSP nextTurtleX2, operation Mode is: A*B.
+DSP Report: operator nextTurtleX2 is absorbed into DSP nextTurtleX2.
+DSP Report: Generating DSP nextTurtleX1, operation Mode is: C+A*B.
+DSP Report: operator nextTurtleX1 is absorbed into DSP nextTurtleX1.
+DSP Report: operator nextTurtleX3 is absorbed into DSP nextTurtleX1.
+DSP Report: Generating DSP nextTurtleY3, operation Mode is: A*B.
+DSP Report: operator nextTurtleY3 is absorbed into DSP nextTurtleY3.
+DSP Report: Generating DSP nextTurtleY1, operation Mode is: C+A*B.
+DSP Report: operator nextTurtleY1 is absorbed into DSP nextTurtleY1.
+DSP Report: operator nextTurtleY2 is absorbed into DSP nextTurtleY1.
+DSP Report: Generating DSP nextTurtleY2, operation Mode is: A*B.
+DSP Report: operator nextTurtleY2 is absorbed into DSP nextTurtleY2.
+DSP Report: Generating DSP nextTurtleY1, operation Mode is: C+A*B.
+DSP Report: operator nextTurtleY1 is absorbed into DSP nextTurtleY1.
+DSP Report: operator nextTurtleY3 is absorbed into DSP nextTurtleY1.
+DSP Report: Generating DSP addr1, operation Mode is: A*(B:0x38).
+DSP Report: operator addr1 is absorbed into DSP addr1.
+DSP Report: Generating DSP addr0, operation Mode is: PCIN+(A:0x0):B+(C:0xffffffffffff).
+DSP Report: operator addr0 is absorbed into DSP addr0.
+WARNING: [Synth 8-6014] Unused sequential element MC1/zpos_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:1007]
+WARNING: [Synth 8-3936] Found unconnected internal register 'MC1/xpos_reg' and it is trimmed from '12' to '10' bits. [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:427]
+WARNING: [Synth 8-3936] Found unconnected internal register 'MC1/ypos_reg' and it is trimmed from '12' to '10' bits. [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd:430]
+INFO: [Synth 8-5546] ROM "MC1/periodic_check_tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MC1/timeout" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'j_reg[9:0]' into 'j_reg[9:0]' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:67]
+INFO: [Synth 8-4471] merging register 'j_reg[9:0]' into 'j_reg[9:0]' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:67]
+INFO: [Synth 8-4471] merging register 'i_reg[5:0]' into 'i_reg[5:0]' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:66]
+INFO: [Synth 8-4471] merging register 'i_reg[5:0]' into 'i_reg[5:0]' [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:66]
+WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:67]
+WARNING: [Synth 8-6014] Unused sequential element j_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:67]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:66]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v:66]
+INFO: [Synth 8-5546] ROM "next_addr_inter" won't be mapped to RAM because it is too sparse
+DSP Debug: swapped A/B pins for adder 00000206D12EBF40
+DSP Debug: swapped A/B pins for adder 00000206D1683690
+DSP Report: Generating DSP next_val_out0, operation Mode is: A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: PCIN+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: PCIN+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: PCIN+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: PCIN+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_val_out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: operator next_val_out0 is absorbed into DSP next_val_out0.
+DSP Report: Generating DSP next_addr_const2, operation Mode is: (A:0x310)*B2.
+DSP Report: register i_reg is absorbed into DSP next_addr_const2.
+DSP Report: operator next_addr_const2 is absorbed into DSP next_addr_const2.
+DSP Report: Generating DSP next_addr_const0, operation Mode is: PCIN+(A:0x0):B2+(C:0x3).
+DSP Report: register j_reg is absorbed into DSP next_addr_const0.
+DSP Report: operator next_addr_const0 is absorbed into DSP next_addr_const0.
+DSP Report: Generating DSP next_addr_const0, operation Mode is: (A:0x310)*B+1.
+DSP Report: operator next_addr_const0 is absorbed into DSP next_addr_const0.
+DSP Report: operator next_addr_const0 is absorbed into DSP next_addr_const0.
+DSP Report: Generating DSP next_addr_const0, operation Mode is: (A:0x310)*B.
+DSP Report: operator next_addr_const0 is absorbed into DSP next_addr_const0.
+DSP Report: Generating DSP next_addr_const0, operation Mode is: (C:0x2)+(A:0x310)*B.
+DSP Report: operator next_addr_const0 is absorbed into DSP next_addr_const0.
+DSP Report: operator next_addr_const0 is absorbed into DSP next_addr_const0.
+INFO: [Synth 8-5546] ROM "xplusConverter/xplus" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP digitAddr1, operation Mode is: A*(B:0x8c).
+DSP Report: operator digitAddr1 is absorbed into DSP digitAddr1.
+DSP Report: Generating DSP digitAddr, operation Mode is: PCIN+(A:0x0):B+C.
+DSP Report: operator digitAddr is absorbed into DSP digitAddr.
+WARNING: [Synth 8-3917] design top has port dp driven by constant 1
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[0]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[1]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[2]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[3]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[4]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[5]' (FDSE) to 'mouse_controller/MC1/x_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[6]' (FDSE) to 'mouse_controller/MC1/x_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[7]' (FDSE) to 'mouse_controller/MC1/x_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[8]' (FDSE) to 'mouse_controller/MC1/x_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[9]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[10]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/y_max_reg[11]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[0]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[1]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[2]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[3]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[4]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[5]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[6]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[7]' (FDSE) to 'mouse_controller/MC1/x_max_reg[9]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[8]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3886] merging instance 'mouse_controller/MC1/x_max_reg[10]' (FDRE) to 'mouse_controller/MC1/x_max_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (mouse_controller/\MC1/x_max_reg[11] )
+INFO: [Synth 8-3886] merging instance 'nums_reg[4]' (FDCE) to 'nums_reg[8]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[8]' (FDCE) to 'nums_reg[12]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[5]' (FDCE) to 'nums_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[9]' (FDCE) to 'nums_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[13]' (FDCE) to 'nums_reg[1]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[6]' (FDCE) to 'nums_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[10]' (FDCE) to 'nums_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[14]' (FDCE) to 'nums_reg[2]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[7]' (FDCE) to 'nums_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[11]' (FDCE) to 'nums_reg[3]'
+INFO: [Synth 8-3886] merging instance 'nums_reg[15]' (FDCE) to 'nums_reg[3]'
+INFO: [Synth 8-3886] merging instance 'cp_inst/offsetY_reg[2]' (FDC) to 'cp_inst/offsetX_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cp_inst/\offsetX_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (offsetX_reg[2]) is unused and will be removed from module CanvasPainter.
+WARNING: [Synth 8-3332] Sequential element (MC1/new_event_reg) is unused and will be removed from module mouse.
+WARNING: [Synth 8-3332] Sequential element (MC1/x_max_reg[11]) is unused and will be removed from module mouse.
+WARNING: [Synth 8-3332] Sequential element (MC1/x_max_reg[9]) is unused and will be removed from module mouse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 803.004 ; gain = 512.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping                       | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|canvas_mem_addr_gen | C+A*(B:0x38)                      | 12     | 6      | 7      | -      | 12     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|CanvasPainter       | A*B                               | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CanvasPainter       | C+A*B                             | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|CanvasPainter       | A*B                               | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CanvasPainter       | C+A*B                             | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|CanvasPainter       | A*B                               | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CanvasPainter       | C+A*B                             | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|CanvasPainter       | A*B                               | 10     | 10     | -      | -      | 20     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CanvasPainter       | C+A*B                             | 10     | 10     | 10     | -      | 10     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|CanvasPainter       | A*(B:0x38)                        | 12     | 6      | -      | -      | 18     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|CanvasPainter       | PCIN+(A:0x0):B+(C:0xffffffffffff) | 30     | 8      | 1      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|neural_net          | A*B                               | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | PCIN+A*B                          | 18     | 14     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | A*B                               | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | PCIN+A*B                          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | (PCIN>>17)+A*B                    | 13     | 13     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | PCIN+A*B                          | 18     | 18     | -      | -      | 13     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | A*B                               | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | (PCIN>>17)+A*B                    | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | PCIN+A*B                          | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | (PCIN>>17)+A*B                    | 18     | 18     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | (A:0x310)*B2                      | 6      | 10     | -      | -      | 16     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | PCIN+(A:0x0):B2+(C:0x3)           | 30     | 10     | 2      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
+|neural_net          | (A:0x310)*B+1                     | 7      | 10     | -      | -      | 16     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | (A:0x310)*B                       | 7      | 10     | -      | -      | 17     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|neural_net          | (C:0x2)+(A:0x310)*B               | 7      | 10     | 2      | -      | 16     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|top                 | A*(B:0x8c)                        | 11     | 8      | -      | -      | 19     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|top                 | PCIN+(A:0x0):B+C                  | 30     | 11     | 7      | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++--------------------+-----------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:59]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:72]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:57]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:60]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:72]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:58]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:56 . Memory (MB): peak = 863.230 ; gain = 572.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:58 . Memory (MB): peak = 893.211 ; gain = 602.832
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/canvas_mem_addr_gen.v:27]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:59]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:72]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:57]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:60]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:72]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:64]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:63]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/CanvasPainter.v:58]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:02 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop mouse_controller/MC1/Inst_Ps2Interface/ps2_clk_h_reg is being inverted and renamed to mouse_controller/MC1/Inst_Ps2Interface/ps2_clk_h_reg_inv.
+INFO: [Synth 8-5365] Flop mouse_controller/MC1/Inst_Ps2Interface/ps2_data_h_reg is being inverted and renamed to mouse_controller/MC1/Inst_Ps2Interface/ps2_data_h_reg_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:03 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------------+----------+
+|      |BlackBox name            |Instances |
++------+-------------------------+----------+
+|1     |blk_mem_gen_0            |         1|
+|2     |blk_mem_gen_bg_img       |         1|
+|3     |blk_mem_gen_dirt         |         1|
+|4     |blk_mem_gen_stone        |         1|
+|5     |blk_mem_gen_grass        |         1|
+|6     |blk_mem_gen_digits       |         1|
+|7     |blk_mem_gen_eraser       |         1|
+|8     |blk_mem_gen_normalpen    |         1|
+|9     |blk_mem_gen_normaleraser |         1|
+|10    |blk_mem_gen_cursor       |         1|
+|11    |blk_mem_gen_img          |         1|
+|12    |blk_mem_gen_const        |         1|
+|13    |blk_mem_gen_inter        |         1|
++------+-------------------------+----------+
+
+Report Cell Usage: 
++------+-------------------------+------+
+|      |Cell                     |Count |
++------+-------------------------+------+
+|1     |blk_mem_gen_0            |     1|
+|2     |blk_mem_gen_bg_img       |     1|
+|3     |blk_mem_gen_const        |     1|
+|4     |blk_mem_gen_cursor       |     1|
+|5     |blk_mem_gen_digits       |     1|
+|6     |blk_mem_gen_dirt         |     1|
+|7     |blk_mem_gen_eraser       |     1|
+|8     |blk_mem_gen_grass        |     1|
+|9     |blk_mem_gen_img          |     1|
+|10    |blk_mem_gen_inter        |     1|
+|11    |blk_mem_gen_normaleraser |     1|
+|12    |blk_mem_gen_normalpen    |     1|
+|13    |blk_mem_gen_stone        |     1|
+|14    |BUFG                     |     2|
+|15    |CARRY4                   |   264|
+|16    |DSP48E1                  |     6|
+|17    |DSP48E1_1                |    18|
+|18    |DSP48E1_2                |     2|
+|19    |DSP48E1_3                |     1|
+|20    |DSP48E1_4                |     1|
+|21    |LUT1                     |    49|
+|22    |LUT2                     |   674|
+|23    |LUT3                     |   323|
+|24    |LUT4                     |   307|
+|25    |LUT5                     |   291|
+|26    |LUT6                     |   548|
+|27    |FDCE                     |   143|
+|28    |FDPE                     |     2|
+|29    |FDRE                     |   507|
+|30    |FDSE                     |     6|
+|31    |IBUF                     |     5|
+|32    |IOBUF                    |     2|
+|33    |OBUF                     |    36|
++------+-------------------------+------+
+
+Report Instance Areas: 
++------+---------------------------+--------------------------------+------+
+|      |Instance                   |Module                          |Cells |
++------+---------------------------+--------------------------------+------+
+|1     |top                        |                                |  3377|
+|2     |  clk1                     |clock_divider                   |    18|
+|3     |  clk_wiz_0_inst           |clock_divisor                   |     4|
+|4     |  canvas_mem_addr_gen_inst |canvas_mem_addr_gen             |   119|
+|5     |  clk2                     |clock_divider__parameterized0   |     4|
+|6     |  cp_inst                  |CanvasPainter                   |   508|
+|7     |  mouse_controller         |mouse                           |   688|
+|8     |    MC1                    |MouseCtl                        |   688|
+|9     |      Inst_Ps2Interface    |Ps2Interface                    |   268|
+|10    |  nn1                      |neural_net                      |  1007|
+|11    |  pixel_generator          |pixel_gen                       |   141|
+|12    |    cd2                    |clock_divider_n                 |    28|
+|13    |    cd3                    |clock_divider_n__parameterized0 |    29|
+|14    |  ssd1                     |seven_segment_display           |    20|
+|15    |  vga_inst                 |vga_controller                  |   440|
+|16    |  xplusConverter           |XplusConverter                  |    20|
++------+---------------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:04 . Memory (MB): peak = 944.781 ; gain = 654.402
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 944.781 ; gain = 306.887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:05 . Memory (MB): peak = 944.781 ; gain = 654.402
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 299 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+253 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:10 . Memory (MB): peak = 944.781 ; gain = 667.094
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.292 . Memory (MB): peak = 944.781 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 11 12:39:25 2019...

@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_inter/sim/blk_mem_gen_inter.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

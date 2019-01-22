@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_inter/sim/blk_mem_gen_inter.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_const/sim/blk_mem_gen_const.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_img/sim/blk_mem_gen_img.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/ip/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/canvas_mem_addr_gen.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/clock_divisor.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/neural_net.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/pixel_gen.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/new/vga.v" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sim_1/new/nn_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Jan 11 12:18:26 2019
+# Process ID: 9528
+# Current directory: D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/blk_mem_gen_normalpen_synth_1
+# Command line: vivado.exe -log blk_mem_gen_normalpen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_normalpen.tcl
+# Log file: D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/blk_mem_gen_normalpen_synth_1/blk_mem_gen_normalpen.vds
+# Journal file: D:/j3soon/File/Projects/Clean Projects/Handwritten-Digit-Recognition-Painter/src/Handwritten-Digit-Recognition-Painter.runs/blk_mem_gen_normalpen_synth_1\vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_normalpen.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP blk_mem_gen_normalpen, cache-ID = c1267817f6a69e18.
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 11 12:18:34 2019...

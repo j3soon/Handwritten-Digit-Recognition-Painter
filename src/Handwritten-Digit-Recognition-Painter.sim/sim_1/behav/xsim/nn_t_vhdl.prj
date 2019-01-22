@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseCtl.vhd" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/MouseDisplay.vhd" \
+"../../../../Handwritten-Digit-Recognition-Painter.srcs/sources_1/imports/mouse_demo/Ps2Interface.vhd" \
+
+# Do not sort compile order
+nosort
