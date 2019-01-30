@@ -1,6 +1,6 @@
 # Handwritten Digit Recognition Painter
 
-A handwritten digit recognition painter implementation on Basys 3 Artix-7 FPGA using Verilog.
+A handwritten digit recognition painter implementation on Basys 3 Artix-7 FPGA using Verilog and a little VHDL.
 
 ## Report & Explanation
 
@@ -8,7 +8,7 @@ See [report.pdf](/report.pdf) for further information.
 
 ## Source
 
-See [src](/src).
+See [src](/src) in Vivado.
 
 ## Release Binaries
 
