@@ -2,7 +2,7 @@
 
 A handwritten digit recognition painter implementation on Basys 3 Artix-7 FPGA using Verilog and a little VHDL.
 
-<img src="docs/imgs/preview.png" width="400"/>
+<img src="docs/imgs/preview.gif" width="400"/>
 
 ![](docs/imgs/block-diagram.png)
 
